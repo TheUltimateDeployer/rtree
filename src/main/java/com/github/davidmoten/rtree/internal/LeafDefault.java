@@ -14,9 +14,13 @@ import rx.functions.Func1;
 
 public final class LeafDefault<T, S extends Geometry> implements Leaf<T, S> {
 
-    private final List<Entry<T, S>> entries;
-    private final Rectangle mbr;
-    private final Context<T, S> context;
+    private List<Entry<T, S>> entries;
+    private Rectangle mbr;
+    private Context<T, S> context;
+
+    public LeafDefault() {
+        super();
+    }
 
     public LeafDefault(List<Entry<T, S>> entries, Context<T, S> context) {
         this.entries = entries;

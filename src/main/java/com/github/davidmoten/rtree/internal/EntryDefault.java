@@ -16,9 +16,13 @@ import com.github.davidmoten.rtree.internal.util.ObjectsHelper;
  *            geometry type
  */
 public final class EntryDefault<T, S extends Geometry> implements Entry<T, S> {
-    private final T value;
-    private final S geometry;
+    private T value;
+    private S geometry;
 
+
+    public EntryDefault() {
+        super();
+    }
     /**
      * Constructor.
      * 
